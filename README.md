@@ -15,12 +15,6 @@ A C++ implementation of a ray tracing renderer that simulates light physics to c
 - C++ compiler with C++11 support
 - Visual Studio 2019 or later
 
-### Running the Program
-The program prompts the user for:
-- Number of spheres to include in the scene
-- Whether to render a single image or animation
-- For animations, the number of frames to generate
-
 ### Creating Videos from Frames
 After generating animation frames, you can create a video using ffmpeg:
 ffmpeg -framerate 30 -i frame_%d.ppm -c libx264 -pix_fmt yuv420p animation.mp4
